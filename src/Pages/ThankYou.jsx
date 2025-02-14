@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function ThankYou() {
   const navigate = useNavigate();
-  const [seconds, setSeconds] = useState(10);
+  const [seconds, setSeconds] = useState(5);
 
   useEffect(() => {
     const interval = setInterval(() => {

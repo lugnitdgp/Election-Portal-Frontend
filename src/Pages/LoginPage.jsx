@@ -74,7 +74,7 @@ function LoginPage() {
       <div className=" md:w-3/5 w-full h-screen flex flex-col gap-6 py-5 relative ">
         <NitDgpHeader />
         <p className=" text-4xl md:text-2xl text-center">
-          GymKhana Election Portal
+          Training&Placement Representative Election Portal
         </p>
         <div className=" w-3/4 rounded-xl bg-amber-100/20 mx-auto shadow-lg   py-10 px-5">
           <p className=" text-3xl text-center">Log In To your Account</p>

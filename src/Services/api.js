@@ -6,5 +6,5 @@ export const ListEligibleElections = (token) => RESTAPI.GET("/api/election", tok
 export const ListAdminElections = (token) => RESTAPI.GET("/api/admin/election", token);
 export const getElection = (election_id, token) => RESTAPI.GET(`/api/election/${election_id}`, token);
 export const getResult = (election_id, token) => RESTAPI.GET(`/api/admin/result/${election_id}`, token);
-export const voteCandidate = (candidate_id, token) => RESTAPI.POST(`/api/vote/${candidate_id}`,{}, token);
+export const voteCandidate = (election_id,candidateIDs ,token) => RESTAPI.POST(`/api/vote/${election_id}`,{candidates:candidateIDs}, token);
 
