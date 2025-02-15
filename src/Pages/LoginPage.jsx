@@ -129,7 +129,7 @@ function LoginPage() {
               <div className=" text-lg font-bold text-center "> {ele.title}</div>
               <div className=" text-md text-center"> Batch: {ele.year===0? "All":ele.year}</div>
               <div className=" text-md text-center"> Dept: {ele.department}</div>
-              <div className=" text-lg text-center"> Votes: <span className=" text-red-700 font-bold">{ele.total_votes}</span></div>
+              <div className=" text-lg text-center"> Students Voted: <span className=" text-red-700 font-bold">{Math.ceil(ele.total_votes/ele.max_votes)} / {ele.total_eligible_voters}</span></div>
             </div>
           );
         })}
